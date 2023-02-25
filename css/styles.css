@@ -6,17 +6,24 @@ html {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.1em;
 }
 
-.link {
+/*.navigation-list li a {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1em;
   color: #ffffff;
   text-decoration: none;
+}*/
+
+.link {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: var(--color-section-header);
 }
 
 .unstyled-list {
@@ -35,8 +42,10 @@ html {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 12px 20px;
 }
 
+.page-header,
 .hero-section,
 .header-navigation,
 .page-section {
@@ -138,7 +147,6 @@ html {
   font-size: 11px;
   line-height: 15px;
   text-align: center;
-
   color: #303030;
 }
 
@@ -166,4 +174,52 @@ html {
 .hair-cut-action {
   width: 270px;
   height: 360px;
+}
+
+.navigation-list,
+.right-navigation-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navigation-list {
+  flex-grow: 1;
+}
+
+.page-header {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.navigation-list li a:hover {
+  color: #FF6C00;
+}
+
+.about {
+  display: flex;
+  gap: 30px;
+}
+
+.about .images-container {
+  display: flex;
+  gap: 30px;
+}
+
+.header-container,
+.hero-section,
+.about {
+  width: 1170px;
+  margin: 0 auto;
 }
